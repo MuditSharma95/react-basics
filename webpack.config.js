@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "dist"),
   },
-
+  devtool: 'inline-source-map',
   mode: 'development',
   resolve: {
     extensions: ['.js', '.jsx']

@@ -1,5 +1,5 @@
 
-import { INCREMENT, DECREMENT } from '../actions/actionConstants';
+import { INCREMENT_SUCCESS, DECREMENT_SUCCESS } from '../actions/actionConstants';
 
 const INITIAL_STATE = {
     count: 0,
@@ -8,14 +8,14 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
 
-        case INCREMENT:
+        case INCREMENT_SUCCESS:
             return {
-                ...state, count: state.count + 1
+                ...state, count: action.payload
             }
 
-        case DECREMENT:
+        case DECREMENT_SUCCESS:
             return {
-                ...state, count: state.count - 1
+                ...state, count: action.payload
             }
         default:
             return state;

@@ -1,1 +1,9 @@
-node_modules
+node_modules/
+npm-debug.log
+.vscode
+public/js
+public/css
+.awcache
+tsconfig.json
+.idea/
+coverage

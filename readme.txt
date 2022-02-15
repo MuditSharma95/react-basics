@@ -21,6 +21,9 @@ npm install @reduxjs/toolkit react-redux
 npm install --save redux-devtools-extension
 
 
+#to setup saga 
+npm install redux-saga
+
 
 
 
